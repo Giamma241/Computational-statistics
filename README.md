@@ -34,7 +34,7 @@ The structure is crafted to guide every data science professional and enthusiast
 
 ## Getting Started
 
-# Model selection in GLM model - Poisson regression
+### Model selection in GLM model - Poisson regression
 
 ```matlab
 clear; samplesize = 100; simulatePoissonregression
@@ -47,7 +47,7 @@ clear; samplesize = 50000; simulatePoissonregression
 print -dpng fig_glm_n50000.png
 ```
 
-# Information criteria
+### Information criteria
 
 ```matlab
 clear; samplesize = 30; STATF408simulationsIC2025
@@ -94,8 +94,9 @@ lambda_cp = lambda(idx_cp_min);
 lambda_pe = lambda(idx_pe_min);
 fprintf('Lambda at Cp minimum: %.4f\n', lambda_cp);
 fprintf('Lambda at PE minimum: %.4f\n', lambda_pe);
+```
 
-# Bootstrap
+### Bootstrap
 
 ```matlab
 clear; samplesize = 20; STATF408bootstrap2025
@@ -109,7 +110,7 @@ print(1, '-dpng', 'fig1_bootstrap_n100.png')
 print(2, '-dpng', 'fig2_bootstrap_t_n100.png')
 ```
 
-# Random number generator (Monte Carlo) - Part 1
+### Random number generator (Monte Carlo) - Part 1
 
 ```matlab
 X = randexpinvsqrt(1, 1e5);  % Generate 100,000 samples
@@ -124,7 +125,7 @@ title('Histogram of samples from f_X(x)');
 print -dpng fig_mc_hist.png
 ```
 
-# Random number generator (Monte Carlo) - Part 2
+### Random number generator (Monte Carlo) - Part 2
 
 ```matlab
 clear; studentnumber = 12345; dimension = 2; simulateGibbssamplerN2025
